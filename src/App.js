@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Getdata from './getdata'
+import {Switch,Route,Link} from 'react-router-dom';
+import Sam from './sam'
+import Addcart from './Addcart'
+import Items from './items'
+import './index.css'
+import './card.css'
+import Card from './card'
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    
+    <div class="card"  style={{ margin: `50px`,
+    display: `flex`, flexDirection: `row`,
+     justifyContent: `` }}>
 
-export default App;
+        <div class="container"    
+        className="e-card e-card-horizontal" 
+        style={{ width: `400px` }}>
+        
+      
+   
+     </div>
+   
+ 
+
+<Switch> 
+  <Route exact path='/' component={Addcart}/>    
+<Route path="/card" component={Card}/>
+</Switch>
+
+</div>
+    
+  
+  )
+ 
+}

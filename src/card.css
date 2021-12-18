@@ -1,0 +1,31 @@
+.card {
+   
+    box-shadow: 0 4px 8px 0 rgba(224, 100, 100, 0.2);
+    transition: 0.3s;
+    height: auto;
+    width:50%;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+  }
+  
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.img
+{
+    height:auto;
+    width: auto;
+    max-height: 350px;
+    max-width:350px;
+}
+  .container {
+    padding: 2px 16px;
+    width:30%;
+    /* align-content: flex-end; */
+
+  }

@@ -38,7 +38,7 @@ then(res=>
     })
 },[])
 
-function additem(p,price,id) {
+function additem(price,id) {
     
 
     let tprice=price
@@ -105,9 +105,8 @@ function removeitem(id,price)
                         (
                             <>
                             <h2> Price ${p.product_price}</h2>
-                            <input type='Button' value='Add'  onClick={()=>dispatch(
-                                additemaction(p
-                                    ))}
+                            <input type='Button' value='Add'  onClick={()=>additem(p.product_price
+                                    )}
     
                                 style={{background:'blue',width:'350px'}}/> 
 
